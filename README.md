@@ -1,18 +1,6 @@
 # Final-Alshaikhli
 
-//import os
 
-import validators
-
-import requests as req
-
-# DELIMITERS is used to split the string based on the spacial characters it contains.
-
-# Update DELIMITERS as per your needs
-
-DELIMITERS = ['.',',','\t','\n']
-
-def remove_word(data, word):
 
     # this list is used to store the different representations of the word
 
@@ -29,8 +17,6 @@ def remove_word(data, word):
             data.remove(d)
 
     return data, representations
-
-def word_stats(data: str):
 
     # Replace all delimiters with space
 
@@ -56,8 +42,6 @@ def word_stats(data: str):
 
         print("{0}:{1}%, {2} total occurrences, {3} representations {4}".format(word,(word_count/total_words)*100,word_count, len(representations), str(representations)))
 
-if __name__ == "__main__":
-
     file_name = input()
 
     data = None
@@ -77,4 +61,3 @@ if __name__ == "__main__":
 
         }
     }
-}
